@@ -1,0 +1,20 @@
+cat > .gitignore << 'EOF'
+# VM files - never push these
+*.vmdk
+*.vmx
+*.iso
+*.ova
+
+# Sensitive config files
+*.key
+*.pem
+passwords.txt
+secrets.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs (too large)
+*.log
+EOF
